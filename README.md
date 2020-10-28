@@ -1,4 +1,4 @@
-# someproject
+Zorina Web
 
 ## Project setup
 ```
