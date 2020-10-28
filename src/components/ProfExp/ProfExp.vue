@@ -1,72 +1,85 @@
 <template>
 <v-container class="full-width">
-  <v-row>
-    <v-col md="2">
-    </v-col>
-    <v-col md="8">
-        <v-card class="blue--text text-center" elevation="0">
-            <v-subheader>My Prof Timeline</v-subheader>
-            <v-card-text>
-            Graduation
-            <ProfTimeline />
-            Total: 6 years of exp
-            </v-card-text>
-        </v-card>
-    </v-col>
-    <v-col md="2">
-    </v-col>
-  </v-row> 
-  <v-divider></v-divider>
-  <v-row class="blue lighten-2">
-    <v-col md="2">
-    </v-col>
-    <v-col md="8">
-        <v-card class="blue--text" elevation="0">
-            <v-subheader>Technical Skills</v-subheader>          
-            <Skills />
-        </v-card>
-    </v-col>
-    <v-col md="2">
-    </v-col>
-  </v-row>
-  <v-divider></v-divider> 
-  <v-row>
-    <v-col md="2">
-    </v-col>
-    <v-col md="8">
-        <v-card class="blue--text" elevation="0">
-            <v-subheader>Education</v-subheader> 
-            <Education />         
-        </v-card>
-    </v-col>
-    <v-col md="2">
-    </v-col>
-  </v-row> 
+    <v-row justify="center">
+
+        <v-col md="8">
+            <v-card class="blue--text" elevation="0">
+                <h1 class="text-center">About Me</h1>
+                <v-card-text>
+                    <AboutMe />
+                </v-card-text>
+            </v-card>
+        </v-col>
+
+    </v-row>
+    <v-divider></v-divider>
+    <v-row justify="center">
+        <v-col md="8">
+            <v-card class="blue--text" elevation="0">
+                <h1 class="text-center">My Timeline</h1>
+                <v-card-text>
+                    <ProfTimeline />
+                </v-card-text>
+            </v-card>
+        </v-col>
+    </v-row>
+    <v-divider></v-divider>
+    <v-row justify="center">
+        <v-col md="8">
+            <v-card class="blue--text" elevation="0">
+                <h1 class="text-center">Technical Skills</h1>
+                <Skills />
+            </v-card>
+        </v-col>
+    </v-row>
+    <v-divider></v-divider>
+    <v-row justify="center">
+        <v-col md="8">
+            <v-card class="blue--text" elevation="0">
+                <h1 class="text-center">Software Dev Principles</h1>
+                <SoftwareDevPrinciples />
+            </v-card>
+        </v-col>
+    </v-row>
+    <v-divider></v-divider>
+    <v-row justify="center">
+        <v-col md="8">
+            <v-card class="blue--text" elevation="0">
+                <h1 class="text-center">Education</h1>
+                <Education />
+            </v-card>
+        </v-col>
+    </v-row>
 </v-container>
 </template>
 
 <script>
-  import ProfTimeline from '@/components/ProfExp/ProfTimeline.vue';
-  import Skills from '@/components/ProfExp/Skills.vue';
-  import Education from '@/components/ProfExp/Education.vue';
+import ProfTimeline from '@/components/ProfExp/ProfTimeline.vue';
+import Skills from '@/components/ProfExp/Skills.vue';
+import Education from '@/components/ProfExp/Education.vue';
+import AboutMe from '@/components/ProfExp/AboutMe.vue';
+import SoftwareDevPrinciples from '@/components/ProfExp/SoftwareDevPrinciples.vue';
 
-  export default {
+export default {
     name: 'ProfExp',
 
     components: {
         ProfTimeline,
         Skills,
-        Education
+        Education,
+        AboutMe,
+        SoftwareDevPrinciples
     }
-  }
+}
 </script>
 
 <style scoped>
-    .full-width {
-        width: 100%;
-        align-content: inherit;
-    }
-    .skills {
-        background-color:lightblue;
-    }
+.full-width {
+    width: 100%;
+    align-content: inherit;
+}
+
+.skills {
+    background-color: lightblue;
+}
 </style>

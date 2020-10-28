@@ -8,8 +8,8 @@ import VueRouter from 'vue-router'
 Vue.config.productionTip = false
 
 const routes = [
-  { path: '/components/ProfExp', name: 'exp', component: ProfExp },
-  { path: '/components/Personal', name: 'personal', component: Personal }
+  { path: '/', name: 'exp', component: ProfExp },
+  { path: '/Personal', name: 'personal', component: Personal }
 ]
 
 const router = new VueRouter({

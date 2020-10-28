@@ -1,97 +1,81 @@
 <template>
-  <v-treeview
-    v-model="tree"
-    :open="open"
-    :items="items"
-    activatable
-    item-key="name"
-    open-on-click
-    class="blue lighten-2"
-  >
-    <template v-slot:prepend="{ item, open }">
-      <v-icon v-if="!item.file">
-        {{ open ? 'mdi-folder-open' : 'mdi-folder' }}
-      </v-icon>
-      <v-icon v-else>
-        {{ files[item.file] }}
-      </v-icon>
-    </template>
-  </v-treeview>
+<v-container>
+    <v-row>
+        <v-col md="6">
+            <v-list>
+                <v-list-item v-for="item in items" :key="item.name">
+                    <v-list-item-title>{{ item.name }}</v-list-item-title>
+                    <v-rating v-model="item.rating" readonly size="15"></v-rating>
+                </v-list-item>
+            </v-list>
+        </v-col>
+        <v-col md="6">
+            <v-list>
+                <v-list-item v-for="item in items" :key="item.name">
+                    <v-list-item-title>{{ item.name }}</v-list-item-title>
+                    <v-rating v-model="item.rating" readonly size="15"></v-rating>
+                </v-list-item>
+            </v-list>
+        </v-col>
+    </v-row>
+</v-container>
 </template>
 
 <script>
-  export default {
+export default {
     name: 'Skills',
-    
+
     data: () => ({
-      open: ['public'],
-      files: {
-        html: 'mdi-language-html5',
-        js: 'mdi-nodejs',
-        json: 'mdi-code-json',
-        md: 'mdi-language-markdown',
-        pdf: 'mdi-file-pdf',
-        png: 'mdi-file-image',
-        txt: 'mdi-file-document-outline',
-        xls: 'mdi-file-excel',
-      },
-      tree: [],
-      items: [
-        {
-          name: 'Languages',
-          children: [
-            {
-              name: 'Java',
-              file: 'json'
-            },
-            {
-              name: 'JS',
-              file: 'js'
-            },
-            {
-              name: 'SQL',
-              file: 'json'
-            },
-          ],
+        open: ['public'],
+        files: {
+            html: 'mdi-language-html5',
+            js: 'mdi-nodejs',
+            json: 'mdi-code-json',
+            md: 'mdi-language-markdown',
+            pdf: 'mdi-file-pdf',
+            png: 'mdi-file-image',
+            txt: 'mdi-file-document-outline',
+            xls: 'mdi-file-excel',
+            code: 'mdi-checkbox-marked-circle-outline'
         },
-        {
-          name: 'Java Tech',
-        },
-        {
-          name: 'Front End',
-          children: [
-            {
-              name: 'HTML',
-              file: 'png'
+        tree: [],
+        items: [{
+                name: 'Languages',
+                file: 'code',
+                rating: '4',
             },
             {
-              name: 'CSS',
-              file: 'png',
+                name: 'Java Tech',
+                file: 'code',
+                rating: '3'
             },
             {
-              name: 'Bootstrap',
-              file: 'html',
+                name: 'Front End',
+                file: 'code',
+                rating: '3'
             },
-          ],
-        },
-        {
-          name: 'Tools',
-          file: 'md',
-        },
-        {
-          name: 'Server',
-          file: 'js',
-        },
-        {
-          name: 'Operating Systems',
-          file: 'json',
-        }
-      ],
+            {
+                name: 'Tools',
+                file: 'code',
+                rating: '1'
+            },
+            {
+                name: 'Server',
+                file: 'code',
+                rating: '1'
+            },
+            {
+                name: 'Operating Systems',
+                file: 'code',
+                rating: '1'
+            }
+        ],
     }),
-  }
+}
 </script>
+
 <style scoped>
-    .skills {
-        background-color:lightblue;
-    }
+.skills {
+    background-color: lightblue;
+}
 </style>

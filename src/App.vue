@@ -1,15 +1,15 @@
 <template>
-  <v-app>
-    <v-app-bar app> 
-      <Navigation/> 
+<v-app>
+    <v-app-bar app>
+        <Navigation />
     </v-app-bar>
-    
+
     <v-main app height="100%">
-      <router-view></router-view>
-      <Footer width="100%">
-      </Footer>
+        <router-view></router-view>
+        <Footer width="100%">
+        </Footer>
     </v-main>
-  </v-app>
+</v-app>
 </template>
 
 <script>
@@ -17,15 +17,22 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 export default {
-  name: 'App',
+    name: 'App',
 
-  components: {
-    Navigation,
-    Footer
-  },
+    components: {
+        Navigation,
+        Footer
+    },
 
-  data: () => ({
-    //
-  }),
+    data: () => ({
+        //
+    }),
 };
 </script>
+
+<style>
+h1 {
+    font: 54px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+</style>

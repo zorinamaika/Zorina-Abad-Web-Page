@@ -1,67 +1,60 @@
 <template>
-<v-toolbar
-      color="blue"
-      dark
-    >
-      <v-avatar>
-        <img
-          src="https://icon-library.net//images/icon-developer/icon-developer-17.jpg"
-        >
-      </v-avatar>
-      
-      <v-divider
-        class="mx-4"
-        vertical
-      ></v-divider>
+<v-toolbar color="blue" dark>
+    <v-avatar>
+        <img src="https://image.flaticon.com/icons/png/512/1508/1508843.png">
+    </v-avatar>
 
-      <v-toolbar-title>Zorina.Dev</v-toolbar-title>
-  
-      <v-spacer></v-spacer>
-  
-      <v-spacer></v-spacer>
-  
-      <v-toolbar-items>
-        <v-btn text>
-          <router-link to="/components/ProfExp" class="white--text link">
+    <v-divider class="mx-4" vertical></v-divider>
+
+    <v-toolbar-title>Zorina Maika Dev</v-toolbar-title>
+
+    <v-spacer></v-spacer>
+
+    <v-spacer></v-spacer>
+
+    <v-toolbar-items>
+        <v-btn to="/" text>
             Resume
-          </router-link>
+            <router-link class="white--text link">
+            </router-link>
         </v-btn>
 
         <v-divider vertical></v-divider>
 
-        <v-btn text>
-          <router-link to="/components/Personal" class="white--text link">
+        <v-btn to="/Personal" text>
             Personal
-          </router-link>
+            <router-link class="white--text link">
+            </router-link>
         </v-btn>
-  
+
         <v-divider vertical></v-divider>
-  
+
         <v-btn text>
-          Contact Me
+            Projects
         </v-btn>
-  
-      </v-toolbar-items>
-    </v-toolbar>
+
+    </v-toolbar-items>
+</v-toolbar>
 </template>
 
 <script>
-  export default {
+export default {
     name: 'Navigation',
 
     data: () => ({
-      links: [
-        'Home',
-        'About Me',
-        'Experience',
-        'Personal',
-        'Contact Me'
-    ]})
-  }
+        links: [
+            'Home',
+            'About Me',
+            'Experience',
+            'Personal',
+            'Contact Me'
+        ]
+    })
+}
 </script>
 
 <style scoped>
-    .link {
-        text-decoration: none;
-    }
+.link {
+    text-decoration: none;
+}
 </style>

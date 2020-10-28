@@ -1,71 +1,48 @@
 <template>
-  <v-footer
-    dark
-    padless
-    width="100%"
-  >
-    <v-card
-      flat
-      tile
-      class="blue lighten-1 white--text text-center"
-      width="100%"
-    >
-      <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-4 white--text"
-          icon
-          :href="icon.link"
-          target="_blank"
-        >
-          <v-icon size="24px">
-            {{ icon.logo }}
-          </v-icon>
-        </v-btn>
-      </v-card-text>
+<v-footer dark padless width="100%">
+    <v-card flat tile class="blue lighten-1 white--text text-center" width="100%">
+        <v-card-text>
+            Contact Me
+            <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon :href="icon.link" target="_blank">
+                <v-icon size="24px">
+                    {{ icon.logo }}
+                </v-icon>
+            </v-btn>
+        </v-card-text>
 
-      <v-divider></v-divider>
+        <v-divider></v-divider>
 
-      <v-card-text class="white--text">
-       ( {{ new Date().getFullYear() }} ) <strong>ZM</strong> version 1.0
-      </v-card-text>
+        <v-card-text class="white--text">
+            {{ new Date().getFullYear() }} <strong>ZM</strong> made using VueJS
+        </v-card-text>
     </v-card>
-  </v-footer>
+</v-footer>
 </template>
 
 <script>
-  export default {
+export default {
     name: 'Footer',
 
     data: () => ({
-    icons: [
-      {
-          logo: 'mdi-facebook',
-          link: 'https://www.fb.com/abadzorina'
-      }
-      ,
-      {
-          logo: 'mdi-linkedin',
-          link: 'https://www.linkedin.com/in/abadzorina'
-      }
-      ,
-      {
-          logo: 'mdi-instagram',
-          link: 'https://instagram.com/zorinabad'
-      }
-      ,
-      {
-          logo: 'mdi-github',
-          link: 'https://github.com/zorinamaika'
-      }
-    ],
+        icons: [{
+                logo: 'mdi-linkedin',
+                link: 'https://www.linkedin.com/in/zorinamaika'
+            },
+            {
+                logo: 'mdi-github',
+                link: 'https://github.com/zorinamaika'
+            },
+            {
+                logo: 'mdi-email-outline',
+                link: 'mailto:zorinamaika.dev@gmail.com'
+            }
+        ],
     }),
-  }
+}
 </script>
 
 <style scoped>
-    .full-width {
-        width: 100%;
-    }
+.full-width {
+    width: 100%;
+}
 </style>
