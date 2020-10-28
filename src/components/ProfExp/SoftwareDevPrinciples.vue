@@ -1,5 +1,6 @@
 <template>
 <v-card md="6" tile elevation="0">
+    software dev principles that I will try to apply
     <v-list-item two-line class="text-center">
         <v-list-item-content>
             <v-list-item-title>DRY</v-list-item-title>
