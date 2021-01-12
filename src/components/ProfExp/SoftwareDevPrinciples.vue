@@ -23,7 +23,7 @@
         <v-list-item-content>
             <v-list-item-title>Code Smells</v-list-item-title>
             <v-list-item-subtitle>
-                Code Smells
+                Code Smellsss
             </v-list-item-subtitle>
         </v-list-item-content>
     </v-list-item>
