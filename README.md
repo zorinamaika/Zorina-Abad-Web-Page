@@ -1,5 +1,7 @@
 Zorina Web
 
+A personal resume web page
+
 ## Project setup
 ```
 npm install
