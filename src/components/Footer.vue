@@ -2,7 +2,7 @@
 <v-footer dark padless width="100%">
     <v-card flat tile class="blue lighten-1 white--text text-center" width="100%">
         <v-card-text>
-            Contact Me
+            Contact Me: 
             <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon :href="icon.link" target="_blank">
                 <v-icon size="24px">
                     {{ icon.logo }}
@@ -13,7 +13,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-            {{ new Date().getFullYear() }} <strong>ZM</strong> made using VueJS
+            {{ new Date().getFullYear() }} | Developed by Zorina Maika using VueJS and Material UI
         </v-card-text>
     </v-card>
 </v-footer>

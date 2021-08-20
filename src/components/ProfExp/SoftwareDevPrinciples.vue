@@ -1,6 +1,6 @@
 <template>
 <v-card md="6" tile elevation="0">
-    software dev principles that I will try to apply
+    <h2><center>software dev principles to be applied</center></h2>
     <v-list-item two-line class="text-center">
         <v-list-item-content>
             <v-list-item-title>DRY</v-list-item-title>
@@ -14,7 +14,7 @@
         <v-list-item-content>
             <v-list-item-title>SOLID</v-list-item-title>
             <v-list-item-subtitle>
-                S O L I D
+                S O L I D Principles
             </v-list-item-subtitle>
         </v-list-item-content>
     </v-list-item>
@@ -23,7 +23,7 @@
         <v-list-item-content>
             <v-list-item-title>Code Smells</v-list-item-title>
             <v-list-item-subtitle>
-                Code Smellsss
+                Code Smells
             </v-list-item-subtitle>
         </v-list-item-content>
     </v-list-item>

@@ -17,9 +17,9 @@
             <v-list-item-title>High School</v-list-item-title>
             <v-list-item-subtitle>
                 <v-avatar>
-                    <img src="http://112.199.66.12/sites/default/files/pictures/School%20of%20Holy%20Spirit%20Quezon%20City.png">
+                    <img src="https://paascu.org.ph/wp-content/uploads/elementor/thumbs/ncr-89-p4ami7hkixc7aow3rgvlkf59okmyzy2thimzndqd0w.png">
                 </v-avatar>
-                School of the Holy Spirit of Quezon City
+                School of the Holy Spirit of QC
             </v-list-item-subtitle>
         </v-list-item-content>
     </v-list-item>

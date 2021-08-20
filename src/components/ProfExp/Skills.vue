@@ -3,7 +3,7 @@
     <v-row>
         <v-col md="6">
             <v-list>
-                <v-list-item v-for="item in items" :key="item.name">
+                <v-list-item v-for="item in items1" :key="item.name">
                     <v-list-item-title>{{ item.name }}</v-list-item-title>
                     <v-rating v-model="item.rating" readonly size="15"></v-rating>
                 </v-list-item>
@@ -11,7 +11,7 @@
         </v-col>
         <v-col md="6">
             <v-list>
-                <v-list-item v-for="item in items" :key="item.name">
+                <v-list-item v-for="item in items2" :key="item.name">
                     <v-list-item-title>{{ item.name }}</v-list-item-title>
                     <v-rating v-model="item.rating" readonly size="15"></v-rating>
                 </v-list-item>
@@ -39,37 +39,68 @@ export default {
             code: 'mdi-checkbox-marked-circle-outline'
         },
         tree: [],
-        items: [{
-                name: 'Languages',
+        items1: [{
+                name: 'Java',
                 file: 'code',
                 rating: '4',
             },
             {
-                name: 'Java Tech',
+                name: 'Spring',
                 file: 'code',
                 rating: '3'
             },
             {
-                name: 'Front End',
+                name: 'Maven',
                 file: 'code',
                 rating: '3'
             },
             {
-                name: 'Tools',
+                name: 'Hibernate',
                 file: 'code',
-                rating: '1'
+                rating: '3'
             },
             {
-                name: 'Server',
+                name: 'Javascript',
                 file: 'code',
-                rating: '1'
+                rating: '2'
             },
             {
-                name: 'Operating Systems',
+                name: 'HTML & CSS',
                 file: 'code',
-                rating: '1'
+                rating: '2'
             }
         ],
+        items2: [{
+                name: 'Postman',
+                file: 'code',
+                rating: '3',
+            },
+            {
+                name: 'JIRA',
+                file: 'code',
+                rating: '3'
+            },
+            {
+                name: 'JUnit',
+                file: 'code',
+                rating: '3'
+            },
+            {
+                name: 'Tomcat',
+                file: 'code',
+                rating: '3'
+            },
+            {
+                name: 'Eclipse',
+                file: 'code',
+                rating: '4'
+            },
+            {
+                name: 'VS Code',
+                file: 'code',
+                rating: '3'
+            }
+        ]
     }),
 }
 </script>
