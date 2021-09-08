@@ -2,12 +2,12 @@
 <v-container>
     <v-row>
         <v-col>
-            <v-card elevation="0">
-                Hi, I am Zorina Maika, a software engineer. I've been developing desktop and web apps with primary language Java. I have basic knowledge in front end technologies.
+            <v-card elevation="0" style="text-indent: 50px;">
+                Hi, I am Zorina Maika, a software application developer interested in emerging technologies. I've been doing web applications using primarily Java in making back-end APIs. I also have basic knowledge in front end technologies such as Javascript, CSS, and HTML. Targetting to develop apps that are interesting, cutting edge, and remarkable. Would love to work for a company dedicated to continuous growth, collaboration, psychological safety, and flexibility.
             </v-card>
         </v-col>
         <v-col>
-            <img :src="'assets/grad.jpg'" />
+            <img src="@/assets/grad.jpg" width="300px" />
         </v-col>
     </v-row>
 </v-container>

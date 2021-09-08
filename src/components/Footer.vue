@@ -13,7 +13,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-            {{ new Date().getFullYear() }} | Developed by Zorina Maika using VueJS and Material UI
+            2020 | © Zorina Maika 
         </v-card-text>
     </v-card>
 </v-footer>

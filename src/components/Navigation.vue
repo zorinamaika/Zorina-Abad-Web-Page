@@ -6,7 +6,7 @@
 
     <v-divider class="mx-4" vertical></v-divider>
 
-    <v-toolbar-title>Zorina the Software Engineer</v-toolbar-title>
+    <v-toolbar-title>Zorina Maika Developer Resume</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
@@ -27,11 +27,13 @@
             </router-link>
         </v-btn>
 
-        <!--<v-divider vertical></v-divider>
+        <v-divider vertical></v-divider>
 
-        <v-btn text>
+        <v-btn to="/Projects" text>
             Projects
-        </v-btn>-->
+            <router-link class="white--text link">
+            </router-link>
+        </v-btn>
 
     </v-toolbar-items>
 </v-toolbar>

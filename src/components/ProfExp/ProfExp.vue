@@ -1,7 +1,7 @@
 <template>
 <v-container class="full-width">
     <v-row justify="center">
-        <v-col md="9">
+        <v-col md="12">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Summary</h1>
                 <v-card-text>
@@ -13,7 +13,7 @@
     </v-row>
     <v-divider></v-divider>
     <v-row justify="center">
-        <v-col md="9">
+        <v-col md="12">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Professional Timeline</h1>
                 <v-card-text>
@@ -24,7 +24,7 @@
     </v-row>
     <v-divider></v-divider>
     <v-row justify="center">
-        <v-col md="9">
+        <v-col md="12">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Technical Skills</h1>
                 <Skills />
@@ -33,16 +33,16 @@
     </v-row>
     <v-divider></v-divider>
     <v-row justify="center">
-        <v-col md="9">
+        <v-col md="12">
             <v-card class="blue--text" elevation="0">
-                <h1 class="text-center">Software Dev Principles</h1>
+                <h1 class="text-center">Software Programming Best Practices</h1>
                 <SoftwareDevPrinciples />
             </v-card>
         </v-col>
     </v-row>
     <v-divider></v-divider>
     <v-row justify="center">
-        <v-col md="9">
+        <v-col md="12">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Education</h1>
                 <Education />
