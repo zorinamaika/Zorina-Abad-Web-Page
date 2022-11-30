@@ -1,7 +1,7 @@
 <template>
 <v-container class="full-width">
     <v-row justify="center">
-        <v-col md="12">
+        <v-col md="10">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Summary</h1>
                 <v-card-text>
@@ -13,7 +13,7 @@
     </v-row>
     <v-divider></v-divider>
     <v-row justify="center">
-        <v-col md="12">
+        <v-col md="10">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Professional Timeline</h1>
                 <v-card-text>
@@ -24,7 +24,7 @@
     </v-row>
     <v-divider></v-divider>
     <v-row justify="center">
-        <v-col md="12">
+        <v-col md="10">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Technical Skills</h1>
                 <Skills />
@@ -33,16 +33,7 @@
     </v-row>
     <v-divider></v-divider>
     <v-row justify="center">
-        <v-col md="12">
-            <v-card class="blue--text" elevation="0">
-                <h1 class="text-center">Software Programming Best Practices</h1>
-                <SoftwareDevPrinciples />
-            </v-card>
-        </v-col>
-    </v-row>
-    <v-divider></v-divider>
-    <v-row justify="center">
-        <v-col md="12">
+        <v-col md="10">
             <v-card class="blue--text" elevation="0">
                 <h1 class="text-center">Education</h1>
                 <Education />
@@ -57,7 +48,6 @@ import ProfTimeline from '@/components/ProfExp/ProfTimeline.vue';
 import Skills from '@/components/ProfExp/Skills.vue';
 import Education from '@/components/ProfExp/Education.vue';
 import AboutMe from '@/components/ProfExp/AboutMe.vue';
-import SoftwareDevPrinciples from '@/components/ProfExp/SoftwareDevPrinciples.vue';
 
 export default {
     name: 'ProfExp',
@@ -66,8 +56,7 @@ export default {
         ProfTimeline,
         Skills,
         Education,
-        AboutMe,
-        SoftwareDevPrinciples
+        AboutMe
     }
 }
 </script>

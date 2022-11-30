@@ -1,10 +1,5 @@
 <template>
 <v-toolbar color="blue" dark>
-    <v-avatar>
-        <img src="https://image.flaticon.com/icons/png/512/1508/1508843.png">
-    </v-avatar>
-
-    <v-divider class="mx-4" vertical></v-divider>
 
     <v-toolbar-title>Zorina Maika Developer Resume</v-toolbar-title>
 

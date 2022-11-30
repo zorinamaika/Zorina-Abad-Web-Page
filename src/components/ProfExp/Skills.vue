@@ -91,7 +91,7 @@ export default {
                 rating: '3'
             },
             {
-                name: 'Eclipse',
+                name: 'IntelliJ',
                 file: 'code',
                 rating: '4'
             },

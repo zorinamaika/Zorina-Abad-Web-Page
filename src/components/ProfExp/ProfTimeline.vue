@@ -13,7 +13,7 @@
                                 - Part of the Touchpoint Teller team developing the TP teller application for banks such as Vietin Bank, ASEAN banks
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                - Responsibilities include development of modules, bug fixing in SIT and UAT phase, technical documentation, peer code review, guidance of junior members
+                                - Responsibilities include development of modules, bug fixing in SIT and UAT phase, technical documentation, peer code review
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 - Tech: Java, Swing, JUnit, JQuery, Web Services

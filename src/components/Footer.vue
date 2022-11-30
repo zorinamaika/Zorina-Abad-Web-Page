@@ -13,7 +13,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-            2020 | © Zorina Maika 
+            2022 | © Zorina Maika 
         </v-card-text>
     </v-card>
 </v-footer>
